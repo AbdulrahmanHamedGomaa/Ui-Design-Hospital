@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Montserrat:wght@700&family=Rubik:wght@500&display=swap');
+
+.fontrubik , .carousel-inner {
+  font-family: 'rubik';
+}
+
+hr {
+  border: 2px solid rgb(255, 0, 0); /* Set the border to make it bold */
+
+}
+
+h2 , h3 , h1 {
+  font-family: 'rubik';
+}
+
+nav , h5 , p {
+  font-family: 'jost';
+}
+
+.navbar-brand {
+  display: none; /* Hide brand by default */
+}
+
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    display: block;
+  }
+}
+@media only screen and (max-width : 800px) {
+  .cardblue , .cardbluelight{
+    width: 80%;
+    border-radius: 14px;
+    margin-bottom: 12px;
+  }
+   {
+
+  }
+}
+
+.navbar-nav > li > a {
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-nav > li > a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s;
+}
+
+.navbar-nav > li > a:hover::before {
+  width: 100%;
+}
+
+.cardblue{
+  background-color: rgb(48, 48, 104);
+}
+
+.cardbluelight {
+  background-color: rgb(63, 63, 190);
+}
